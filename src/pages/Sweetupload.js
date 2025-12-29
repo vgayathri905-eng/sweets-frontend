@@ -25,7 +25,7 @@ const Sweetupload = () => {
             const foods={title,img,des,rating,price,quantity};
             // console.log(foods,"foods in object ");
             
-            fetch('http://localhost:7005/post',{
+            fetch('https://sweet-website-backend.onrender.com/post',{
                 method:"POST",
                 headers:{
                     'Content-Type':'application/json'

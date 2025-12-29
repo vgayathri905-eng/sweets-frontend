@@ -9,13 +9,13 @@ const GetProducts = () => {
      const[ProductItems,setProductsItems]=useState([]);
 
   useEffect(()=>{
-      fetch(`http://localhost:7005/get`)
+      fetch(`https://sweet-website-backend.onrender.com/get`)
       .then((res)=>res.json())
       .then((data)=>setProductsItems(data))
   },[])
   
    const DeleteItems=(id)=>{
-    fetch(`http://localhost:7005/deleteone/${id}`,
+    fetch(`https://sweet-website-backend.onrender.com/deleteone/${id}`,
       {method:"DELETE",})
       .then((res)=>res.json())
       .then((data)=>{toast.warn('deleted successfully');

@@ -22,7 +22,7 @@
 
                 // console.log(dress,"dress in object ");
                 
-                fetch('http://localhost:7005/uploadproduct',{
+                fetch('https://sweet-website-backend.onrender.com/uploadproduct',{
                     method:"POST",
                     headers:{
                         'Content-Type':'application/json'

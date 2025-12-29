@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = "http://localhost:6010/";
+const API_URL = "https://sweet-website-backend.onrender.com/";
 
 export const register = async (username, password) => {
   try {
